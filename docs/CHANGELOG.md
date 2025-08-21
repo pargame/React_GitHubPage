@@ -1,1 +1,1 @@
-- 63971e2 Merge branch 'main' of https://github.com/pargame/React_GitHubPage (pargame)
+- b292b63 Fix build script and dependencies (pargame)
