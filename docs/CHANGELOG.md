@@ -1,1 +1,1 @@
-- ec1403c Trigger GitHub Actions (pargame)
+- 5d8f700 Update .gitignore with comprehensive exclusions (pargame)
