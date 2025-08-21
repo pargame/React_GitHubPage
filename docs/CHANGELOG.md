@@ -1,1 +1,1 @@
-- b292b63 Fix build script and dependencies (pargame)
+- 0814d85 Update copilot-instructions.md with commit/push automation note (pargame)
