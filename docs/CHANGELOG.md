@@ -1,1 +1,1 @@
-- 8180b6e Ensure all required React project files are present (pargame)
+- b400a95 Update workflow to use npm ci and adjust dependencies for React 18 compatibility (pargame)
