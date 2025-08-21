@@ -1,0 +1,26 @@
+name: Update CHANGELOG
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Generate changelog
+      run: |
+        git log --pretty=format:"- %h %s (%an)" > docs/CHANGELOG.md
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add docs/CHANGELOG.md
+        git commit -m "Update CHANGELOG.md"
+        git push
