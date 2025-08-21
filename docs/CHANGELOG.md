@@ -1,1 +1,1 @@
-- 0814d85 Update copilot-instructions.md with commit/push automation note (pargame)
+- 8180b6e Ensure all required React project files are present (pargame)
