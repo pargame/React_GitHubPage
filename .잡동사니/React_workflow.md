@@ -49,5 +49,63 @@
 
 ---
 
+## Git 워크플로우
+
+1. **Git 초기화**:
+   - 프로젝트 폴더에서 Git을 초기화합니다:
+     ```bash
+     git init
+     ```
+
+2. **`.gitignore` 설정**:
+   - React 프로젝트에서 무시해야 할 파일 및 폴더를 `.gitignore`에 추가합니다:
+     ```plaintext
+     node_modules/
+     build/
+     .env
+     ```
+
+3. **첫 커밋**:
+   - 프로젝트 초기 상태를 커밋합니다:
+     ```bash
+     git add .
+     git commit -m "Initial commit"
+     ```
+
+4. **원격 저장소 연결**:
+   - GitHub에 저장소를 생성한 후, 원격 저장소를 연결합니다:
+     ```bash
+     git remote add origin https://github.com/<GitHub-Username>/<Repository-Name>.git
+     git branch -M main
+     git push -u origin main
+     ```
+
+5. **작업 후 커밋**:
+   - 코드를 수정한 후 변경 사항을 커밋합니다:
+     ```bash
+     git add .
+     git commit -m "Update feature X"
+     ```
+
+6. **배포**:
+   - 작업이 완료되면 `npm run deploy` 명령어를 실행하여 `gh-pages` 브랜치에 정적 파일을 배포합니다:
+     ```bash
+     npm run deploy
+     ```
+
+7. **GitHub Pages 설정**:
+   - GitHub 저장소의 **Settings > Pages**에서 `gh-pages` 브랜치를 활성화합니다.
+
+---
+
+## 추가 참고 사항
+
+- **`gh-pages` 브랜치로 스위칭할 필요 없음**:
+  - `npm run deploy` 명령어를 실행하면 `gh-pages` 브랜치가 자동으로 업데이트됩니다.
+  - 따라서 `gh-pages` 브랜치로 직접 전환하거나 수동으로 작업할 필요가 없습니다.
+  - 모든 작업은 `main` 브랜치에서만 진행하면 됩니다.
+
+---
+
 ## 다음 단계
 React 프로젝트 폴더가 생성되었으니, 개발 서버를 실행하고 기본 구조를 확인해보세요. 이후 컴포넌트 작성, 스타일 추가, 라이브러리 설치 등을 진행할 수 있습니다.
